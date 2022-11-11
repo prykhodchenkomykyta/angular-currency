@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+ 
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	background-color: #f9f2ed;
+}
+
+* {
+	 font-family: 'Inter', system-ui !important;
+	 box-sizing: border-box;
+	 user-select: none;
+}
+
+.App {
+	 display: grid;
+	 grid-template-columns: 1fr 1fr;
+	 grid-column-gap: 30px;
+	 width: 800px;
+	 margin: 100px auto;
+	 background-color: #ffffff;
+	 padding: 30px;
+	 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+	 border-radius: 15px;
+}
+
+.block input {
+	 border: 1px solid rgba(0, 0, 0, 0.1);
+	 font-size: 3rem;
+	 font-weight: bold;
+	 padding: 20px 20px;
+	 letter-spacing: 1.3px;
+	 outline: none;
+	 margin-top: 20px;
+	 border-radius: 5px;
+	 width: 100%;
+}
+
+.currencies {
+	 display: flex;
+	 list-style: none;
+	 padding: 0;
+	 margin: 0;
+}
+
+.currencies li {
+	 display: inline-flex;
+	 padding: 10px 20px;
+	 cursor: pointer;
+	 justify-content: center;
+	 flex: 1;
+}
+
+.currencies li:hover {
+	 background-color: rgba(0, 0, 0, 0.03);
+}
+
+.currencies li:active {
+	 background-color: rgba(0, 0, 0, 0.05);
+}
+
+.currencies li.active {
+	 background-color: darkred;
+	 color: #fff;
+}
+
+.select {
+  position: relative;
+  min-width: 200px; }
+  .select svg {
+    position: absolute;
+    right: 12px;
+    top: calc(50% - 3px);
+    width: 10px;
+    height: 6px;
+    stroke-width: 2px;
+    stroke: #9098A9;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    pointer-events: none; }
+  .select select {
+    -webkit-appearance: none;
+    padding: 7px 40px 7px 12px;
+    width: 100%;
+    border: 1px solid #E8EAED;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 1px 3px -2px #9098A9;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    transition: all 150ms ease; }
+    .select select:required:invalid {
+      color: #5A667F; }
+    .select select option {
+      color: #223254; }
+      .select select option[value=""][disabled] {
+        display: none; }
+    .select select:focus {
+      outline: none;
+      border-color: #0077FF;
+      box-shadow: 0 0 0 2px rgba(0, 119, 255, 0.2); }
+    .select select:hover + svg {
+      stroke: #0077FF; }
+
+.sprites {
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+   }
+

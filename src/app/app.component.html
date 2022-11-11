@@ -1,0 +1,38 @@
+<div class='App'>
+  <div class='block'>
+  <ul class="currencies">
+      <li>
+        <label class="select" for="slct">
+        <select data-ng-model="inCurr" >
+        <option data-ng-repeat="curr in currencies">{{curr}}</option>
+      </select>
+        <svg>
+          <use xlink:href="#select-arrow-down"></use>
+        </svg>
+      </label>
+      </li>
+    </ul>
+  <input id="inputCurr" type="number" min="0" ng-model="inputValue">
+  </div>
+  <div class='block'>
+    <ul class="currencies">
+      <li>
+        <label class="select" for="slct">
+        <select data-ng-model="outCurr">
+          <option data-ng-repeat="curr in currencies">{{curr}}</option>
+        </select>
+        <svg>
+          <use xlink:href="#select-arrow-down"></use>
+        </svg>
+        </label>
+      </li>
+    </ul>
+  <input id="oututCurr" type="number" min="0" ng-model="output()">
+  </div>
+  </div>
+
+<svg class="sprites">
+  <symbol id="select-arrow-down" viewbox="0 0 10 6">
+    <polyline points="1 1 5 5 9 1"></polyline>
+  </symbol>
+</svg>
